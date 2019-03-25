@@ -26,12 +26,34 @@ body {
   left: 1em;
 }
 
-#cover {
+#height {
   position: fixed;
   top: 0;
-  right: 50vw;
-  background: white;
-  width: 1em;
+  top: var(--true-view-top, 0);
+  height: 100vh;
+  line-height: 100vh;
+  right: 51vw;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+
+#true-height {
+  position: fixed;
+  top: 0;
+  top: var(--true-view-top, 0);
+  height: 100vh;
+  height: var(--true-view-height, 100vh);
+  line-height: 100vh;
+  line-height: var(--true-view-height, 100vh);
+  left: 51vw;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  padding-left: 1em;
+  box-sizing: border-box;
 }
 
 </style>
@@ -44,8 +66,11 @@ body {
   <div id="true-top">
     ⤒ True Top
   </div>
-  <div id="cover">
-
+  <div id="height">
+    Height
+  </div>
+  <div id="true-height">
+    True Height
   </div>
 <script src="true-view.js?aaaa12"></script>
 </body>
