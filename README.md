@@ -9,13 +9,13 @@ Based on https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 
 In your html:
 ```html
-<script src="--inner-height.js"></script>
+<script src="true-view.js"></script>
 ```
 
 In your CSS
 ```css
 #thing {
   height: 100vh; // fallback
-  height: var(--inner-height);
+  height: var(--true-view-height);
 }
 ```

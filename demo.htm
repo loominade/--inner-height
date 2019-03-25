@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>true-view test</title>
+<style type="text/css">
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, red 0%, yellow 35%, blue 100%);
+  height: 1000vh;
+  color: white;
+  font-family: sans-serif;
+}
+
+#true-top {
+  position: fixed;
+  top: 0;
+  right: 1em;
+  top: var(--true-view-top, 0);
+}
+#top {
+  position: fixed;
+  top: 0;
+  left: 1em;
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  right: 50vw;
+  background: white;
+  width: 1em;
+}
+
+</style>
+
+</head>
+<body>
+  <div id="top">
+    ⤒ Top
+  </div>
+  <div id="true-top">
+    ⤒ True Top
+  </div>
+  <div id="cover">
+
+  </div>
+<script src="true-view.js?aaaa12"></script>
+</body>
+</html>
